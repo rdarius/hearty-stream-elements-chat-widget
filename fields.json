@@ -92,8 +92,7 @@
     "label": "Minimum cheers",
     "value": 0,
     "group": "Cheers"
-  }, 
-  
+  },
   "testMessage": {
     "type": "button",
     "label": "Test broadcaster message",
@@ -118,14 +117,12 @@
     "value": "Test",
     "group": "Debug"
   },
-  
   "testMessageText": {
     "label": "Message content",
     "type": "text",
     "value": "Test",
     "group": "Debug"
   },
-  
   "testMessage3": {
     "type": "button",
     "label": "Test regular message",

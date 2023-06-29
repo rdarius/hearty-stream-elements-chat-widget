@@ -1,10 +1,43 @@
 /* Copyright (C) 2023 Max @sigmacw_ and Matt @mattsquare_.
  *
  * You may not distribute this code without obtaining explicit permission
- * from Max @sigmacw_ and Matt @mattsquare_. 
- * 
+ * from Max @sigmacw_ and Matt @mattsquare_.
+ *
  * All rights reserved.
  */
+
+:root {
+    /* On streamer message */
+    --rouded-corners-and-heart-next-to-username-color: #FFDEE6;
+    --top-right-heart-and-bottom-left-heart-color: #FFDEE6;
+    --top-and-bottom-border-lines-color: #FFDEE6;
+
+    /* Both streamer and non-streamer messages */
+    --background-gradient-top-color: #491824;
+    --background-gradient-bottom-color: #67192C;
+    --message-text-color: #FFAEC2;
+    --mod-icon-background-color: #FFDEE6;
+    --username-bubble-background-color: #FFDEE6;
+    --username-bubble-text-color: #FF4976;
+
+    /* On non-streamer messages */
+    --right-border-color: #FF4976;
+    --bottom-border-color: #FF4976;
+    --top-border-color: #FF4976;
+    --top-right-border-piece-color: #FF4976;
+
+    /* Event bubble */
+    --event-background-gradient-top-color: #FF5F84;
+    --event-background-gradient-bottom-color: #FF4976;
+    --event-right-border-color: #FFAEC2;
+    --event-icon-background-color: #FFDEE6;
+    --event-text-color: #ffffff;
+    --#FFAEC2;
+
+    /* Unknowns */
+    --unknown-color-1: #00FFFF; /* original value: #FF4976; */
+    --unknown-color-2: #009999; /* original value: #FF4976; */
+}
 
 * {
     font-family: 'Quicksand';
@@ -44,12 +77,12 @@ p {
 }
 
 .white-border {
-    background: #FFDEE6 !important;
-    stroke: #FFDEE6 !important;
+    background: var(--top-and-bottom-border-lines-color) !important;
+    stroke: var(--rouded-corners-and-heart-next-to-username-color) !important;
 }
 
 .white-fill {
-  	fill: #FFDEE6 !important;
+  	fill: var(--top-right-heart-and-bottom-left-heart-color) !important;
 }
 
 .main-container {
@@ -87,10 +120,10 @@ p {
     display: flex;
     width: 100%;
     padding: 16px 32px;
-    background: linear-gradient(to bottom, #491824, #67192C);
-    color: #FFAEC2;
+    background: linear-gradient(to bottom, var(--background-gradient-top-color), var(--background-gradient-bottom-color));
+    color: var(--message-text-color);
     border-radius: 16px;
-    border: solid 4px #FF4976;
+    border: solid 4px var(--right-border-color);
     box-sizing: border-box;
     border-top: none;
     border-left: none;
@@ -175,14 +208,14 @@ p {
 
 .bottom-border .separator-1 {
     height: 4px;
-    background: #FF4976;
+    background: var(--unknown-color-1);
     border-radius: 10px;
     width: 100%;
 }
 
 .bottom-border .separator-2 {
     height: 4px;
-    background: #FF4976;
+    background: var(--bottom-border-color);
     border-radius: 10px;
     width: 100%;
     margin-right: 16px;
@@ -201,7 +234,7 @@ p {
     min-width: 35px;
     min-height: 35px;
     display: flex;
-    background: #FFDEE6;
+    background: var(--mod-icon-background-color);
     border-radius: 64px;
     justify-content: center;
     align-items: center;
@@ -212,10 +245,10 @@ p {
 
 .username {
     padding: 6px 32px;
-    background: #FFDEE6;
+    background: var(--username-bubble-background-color);
     border-radius: 64px;
     display: flex;
-    color: #FF4976;
+    color: var(--username-bubble-text-color);
     align-items: center;
     width: fit-content;
     max-width: 40%;
@@ -231,7 +264,7 @@ p {
     width: 4px;
     height: 4px;
     min-width: 4px;
-    background: #FF4976;
+    background: var(--unknown-color-2);
     border-radius: 64px;
 }
 
@@ -256,14 +289,14 @@ p {
 
 .top-border .separator-1 {
     height: 4px;
-    background: #FF4976;
+    background: var(--top-border-color);
     border-radius: 10px;
     width: 100%;
 }
 
 .top-border .separator-2 {
     height: 4px;
-    background: #FF4976;
+    background: var(--top-right-border-piece-color);
     border-radius: 10px;
     width: 100%;
 }
@@ -271,7 +304,7 @@ p {
 /* ALERT STYLING */
 
 .alert-wrap {
-    background: linear-gradient(to top, #FF5F84, #FF4976);
+    background: linear-gradient(to top, var(--event-background-gradient-top-color), var(--event-background-gradient-bottom-color));
     border-radius: 16px;
     overflow: hidden;
     position: relative;
@@ -279,7 +312,7 @@ p {
     padding: 24px 32px;
     justify-content: space-between;
     align-items: center;
-    border: solid 4px #FFAEC2;
+    border: solid 4px var(--event-right-border-color);
     transform: scaleY(0);
     transform-origin: bottom left;
     animation: scaleIn 0.5s ease 0.2s forwards;
@@ -323,7 +356,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFDEE6;
+    background: var(--event-icon-background-color);
     border-radius: 64px;
 }
 
@@ -332,7 +365,7 @@ p {
 }
 
 .alert-message > p {
-    color: white;
+    color: var(--event-text-color);
     text-align: center;
 }
 
@@ -406,7 +439,7 @@ p {
 
 .alert-top-border .separator-1 {
     height: 4px;
-    background: #FFAEC2;
+    background: var(--event-top-left-border-color);
     border-radius: 10px;
     width: 25%;
     margin-left: 16px;
@@ -414,14 +447,14 @@ p {
 
 .alert-top-border .separator-2 {
     height: 4px;
-    background: #FFAEC2;
+    background: var(--event-top-middle-border-color);
     border-radius: 10px;
     width: 100%;
 }
 
 .alert-top-border .separator-3 {
     height: 4px;
-    background: #FFAEC2;
+    background: var(--event-top-right-border-color);
     border-radius: 10px;
     width: 25%;
     margin-right: 16px;
