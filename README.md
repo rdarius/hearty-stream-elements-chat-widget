@@ -13,15 +13,15 @@ This repository has some changes made in original code, to make it easier to cha
 ## Changes that were been made
 
 - Renamed files (for text editor's highlighting support):
-    - css.txt -> css.css
-    - js.txt -> js.js
-    - html.txt -> html.html
-    - data.txt -> data.json
-    - fields.txt -> fields.json
+    - `css.txt` -> `css.css`
+    - `js.txt` -> `js.js`
+    - `html.txt` -> `html.html`
+    - `data.txt` -> `data.json`
+    - `fields.txt` -> `fields.json`
 
 - extracted all color settings to variables
-    - css.css as `:root{...}` variables
-    - js.js as `colorSettings` data object
+    - in `css.css` as `:root{...}` stylesheet variables
+    - in `js.js` as `colorSettings` javascript data object
 
 ---
 ---
