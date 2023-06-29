@@ -7,12 +7,12 @@
  */
 
 :root {
-    /* On streamer message */
+    /*!* On streamer message *!*/
     --rouded-corners-and-heart-next-to-username-color: #FFDEE6;
     --top-right-heart-and-bottom-left-heart-color: #FFDEE6;
     --top-and-bottom-border-lines-color: #FFDEE6;
 
-    /* Both streamer and non-streamer messages */
+    /*!* Both streamer and non-streamer messages *!*/
     --background-gradient-top-color: #491824;
     --background-gradient-bottom-color: #67192C;
     --message-text-color: #FFAEC2;
@@ -20,21 +20,27 @@
     --username-bubble-background-color: #FFDEE6;
     --username-bubble-text-color: #FF4976;
 
-    /* On non-streamer messages */
+    /*!* On non-streamer messages *!*/
     --right-border-color: #FF4976;
     --bottom-border-color: #FF4976;
     --top-border-color: #FF4976;
     --top-right-border-piece-color: #FF4976;
 
-    /* Event bubble */
+    /*!* Event bubble *!*/
     --event-background-gradient-top-color: #FF5F84;
     --event-background-gradient-bottom-color: #FF4976;
     --event-right-border-color: #FFAEC2;
     --event-icon-background-color: #FFDEE6;
     --event-text-color: #ffffff;
-    --#FFAEC2;
+    --event-top-left-border-color: #FFAEC2;
+    --event-top-center-border-color: #FFAEC2;
+    --event-top-right-border-color: #FFAEC2;
+    --event-bottom-left-border-color: #FFAEC2;
+    --event-bottom-right-border-color: #FFAEC2;
+    --event-left-top-border-color: #FFAEC2;
+    --event-left-bottom-border-color: #FFAEC2;
 
-    /* Unknowns */
+    /*!* Unknowns *!*/
     --unknown-color-1: #00FFFF; /* original value: #FF4976; */
     --unknown-color-2: #009999; /* original value: #FF4976; */
 }
@@ -447,7 +453,7 @@ p {
 
 .alert-top-border .separator-2 {
     height: 4px;
-    background: var(--event-top-middle-border-color);
+    background: var(--event-top-center-border-color);
     border-radius: 10px;
     width: 100%;
 }
@@ -478,7 +484,7 @@ p {
 
 .alert-bottom-border .separator-1 {
     height: 4px;
-    background: #FFAEC2;
+    background: var(--event-bottom-left-border-color);
     border-radius: 10px;
     width: 100%;
     margin-left: 16px;
@@ -486,7 +492,7 @@ p {
 
 .alert-bottom-border .separator-2 {
     height: 4px;
-    background: #FFAEC2;
+    background: var(--event-bottom-right-border-color);
     border-radius: 10px;
     width: 50%;
     margin-right: 16px;
@@ -510,7 +516,7 @@ p {
 
 .alert-left-border .separator-1 {
     height: 100%;
-    background: #FFAEC2;
+    background: var(--event-left-top-border-color);
     border-radius: 10px;
     width: 4px;
     margin-top: 16px;
@@ -518,7 +524,7 @@ p {
 
 .alert-left-border .separator-2 {
     height: 50%;
-    background: #FFAEC2;
+    background: var(--event-left-bottom-border-color);
     border-radius: 10px;
     width: 4px;
     margin-bottom: 16px;
