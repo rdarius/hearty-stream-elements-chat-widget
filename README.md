@@ -1,12 +1,27 @@
 # F2U ~ Heart Shaped Chat Widget ~ for StreamElements
 
-Source: https://ko-fi.com/s/76ed4108a5
+Original code from: https://ko-fi.com/s/76ed4108a5
 
 Check them out and support them for this great widget!
 
 -----
 
 This repository has some changes made in original code, to make it easier to change colors of the widget to make it fit your stream asthetics!
+
+-----
+
+## Changes that were been made
+
+- Renamed files (for text editor's highlighting support):
+    - css.txt -> css.css
+    - js.txt -> js.js
+    - html.txt -> html.html
+    - data.txt -> data.json
+    - fields.txt -> fields.json
+
+- extracted all color settings to variables
+    - css.css as `:root{...}` variables
+    - js.js as `colorSettings` data object
 
 ---
 ---
