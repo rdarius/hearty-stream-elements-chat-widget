@@ -41,8 +41,8 @@
     --event-left-bottom-border-color: #FFAEC2;
 
     /*!* Unknowns *!*/
-    --unknown-color-1: #00FFFF; /* original value: #FF4976; */
-    --unknown-color-2: #009999; /* original value: #FF4976; */
+    --unknown-color-1: #FF4976;
+    --unknown-color-2: #FF4976;
 }
 
 * {
