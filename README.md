@@ -10,7 +10,7 @@ This repository has some changes made in original code, to make it easier to cha
 
 -----
 
-## Changes that were been made
+## Changes that were made
 
 - Renamed files (for text editor's highlighting support):
     - `css.txt` -> `css.css`
